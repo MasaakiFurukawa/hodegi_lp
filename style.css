@@ -593,12 +593,12 @@ align-items: center;
 }
 
 
-.moreover{
+.new_function{
     height: 604px;
     background-color: #E4EFFF;
     margin-bottom: -60px;
 }
-.moreover_title{
+.new_function_title{
     color: #D0D0D0;
     text-align: center;
     font-family: "Noto Sans";
@@ -609,7 +609,7 @@ align-items: center;
     letter-spacing: 2.16px;
     padding-top: 35px;
 }
-.moreover_title_jpns{
+.new_function_title_jpns{
     color: #002769;
     text-align: center;
     font-family: "Noto Sans";
@@ -619,8 +619,9 @@ align-items: center;
     line-height: normal;
     margin-top: -24px;
 }
-.moreover_contents{
+.new_function_contents{
     margin: 33px 0;
+    height: 350px;
 }
 .compare_products{
     width: 356px;
@@ -1539,19 +1540,19 @@ height: 238px;
         padding-left: 10px
     }
 
-    .moreover{
+    .new_function{
         height: 829px;    
     }
-    .moreover_title{
+    .new_function_title{
         font-size: 55px;
         padding-top: 73px;
     }
-    .moreover_title_jpns{
+    .new_function_title_jpns{
         font-size: 30px;
         margin-top: -35px;
     }
-    .moreover_contents{
-
+    .new_function_contents{
+        height: 530px;
     }
     .compare_products{
         margin: auto;
@@ -1573,7 +1574,8 @@ height: 238px;
         width: 230px;
         height: 79px;
         padding-left: 33px;
-        line-height: 24px
+        line-height: 24px;
+        position: static;
     }
     .saving_diagnosis_results{
         float: none;
