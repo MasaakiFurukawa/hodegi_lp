@@ -907,7 +907,12 @@ section.cases ul.slider li .d2 p.price .yen {
 img.slide_img {
     width: 100%;
 }
-
+.slick-initialized .slick-slide {
+    height: 233px;
+}
+.slick-slider .slick-track, .slick-slider .slick-list{
+    height: 327px;
+}
 
 section.cases ul.slider li .d1 p.price {
     font-size: 9.2vw;
