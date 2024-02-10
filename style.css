@@ -1327,7 +1327,8 @@ line-height: normal;
         
     }
     .fv_content_back_texts p{
-        margin-bottom: 12px;
+            margin-bottom: 7vw;
+    font-size: 10vw;
     }
     img.fv_image{
         margin-top: 15px;
