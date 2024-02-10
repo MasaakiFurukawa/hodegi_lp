@@ -249,10 +249,10 @@ height: 121.353px;
 }
 
 
-.situasions{
+.situations{
     width: 100%;
 }
-.situasions_background{
+.situations_background{
     position: relative;
     display: block;
     margin: auto;
@@ -375,6 +375,12 @@ margin: 21px auto;
     display: flex;
 }
 .solution_flow_video{
+    width: 176px;
+    height: 350px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.video_gif{
     width: 176px;
     height: 350px;
     border-radius: 30px;
@@ -1385,7 +1391,7 @@ line-height: normal;
         border-right: 5.7px solid #fff;
     }
 
-    .situasions_background{
+    .situations_background{
         height: 602px;
 
     }
@@ -1461,8 +1467,14 @@ height: 80px;
         width: 528px;
     }
     .solution_flow_video{
-        width: 351.376px;
-        height: 732.218px;
+        width: 365px;
+    height: 733px;
+    border-radius: 54px;
+    }
+    .video_gif{
+        width: 365px;
+    height: 733px;
+    border-radius: 54px;
     }
     .sf_step1, .sf_step2, .sf_step3{
         width: 188px;
