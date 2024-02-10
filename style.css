@@ -595,6 +595,7 @@ align-items: center;
 
 .moreover{
     height: 604px;
+	width: 100%;
     background-color: #E4EFFF;
     margin-bottom: -60px;
 }
