@@ -146,20 +146,22 @@ body{
     animation-duration:1s;
     animation-fill-mode:forwards;
     opacity:0;
-    }
-    
-    @keyframes fadeInAnime{
-      from {
+}
+
+@keyframes fadeInAnime{
+    from {
         opacity: 0;
-      }
-    
-      to {
-        opacity: 1;
-      }
     }
+    
+    to {
+        opacity: 1;
+        
+    }
+}
 
 .wrapper{
     width: 100%;
+    background-color:#f1f6f6 ;
 }
 header{
     width: 100%;
@@ -189,7 +191,7 @@ h1.fvh1{
 
 .first_view{
     height: 608px;
-    background-color: #FFF;
+    background-color:#f1f6f6 ;
 }
 
 .fv_content_back{
@@ -197,7 +199,7 @@ h1.fvh1{
     height: 607px;
 }
 .fv_content_back_texts{
-    color: #F5F5F5;
+    color: #FFF;
     text-align: center;
     font-family: "Noto Sans";
     font-size: 51px;
@@ -296,7 +298,7 @@ margin-top: -24px;
 .situations_ex1, .situations_ex2, .situations_ex3{
     width: 117px;
     height: 174px;
-    background-color: #FFF;
+    background-color:#f1f6f6 ;
 }
 .situations_ex1 img{
     padding: 10px 28px;
@@ -1203,7 +1205,7 @@ p.A{
 }
 .question_title ,.answerarea{
     width: 335px;
-    background-color: #FFF;
+    background-color:#f1f6f6 ;
     display: block;
     color: #002769;
 font-family: "Noto Sans";
@@ -1294,10 +1296,14 @@ line-height: normal;
 
 
 
-
+.pc{
+    display: none;
+}
 /* 以下、PC用 */
 @media screen and (min-width: 768px) {
-
+.pc{
+    display: block;
+}
     header{
         height: 71px;
     }
@@ -1345,14 +1351,14 @@ line-height: normal;
     width: 30.45px;
     height: 30.45px;
     }
-    .diagonal_line2{
-        width: 30px;
+    .diagonal_line1,.diagonal_line2{
+        width: 44px;
         height: 30px;
     }
     .CTA_describe{
     font-size: 19.377px;
     display: flex;
-    width: 403px;
+    width: 430px;
     margin: 0 auto 11px auto;
     align-items: flex-end;
     }
@@ -1575,13 +1581,13 @@ height: 238px;
         height: 79px;
         padding-left: 33px;
         line-height: 24px;
-        position: static;
     }
     .saving_diagnosis_results{
         float: none;
         margin: auto;
         width: 569px;
         height: 257px;
+        position: static;
     }
     .saving_diagnosis_results_left{
         width: 282px;
@@ -1934,11 +1940,62 @@ height: 384.863px;
         margin: 0 0 0 4px;
     }
 
-
-
-
-
-
+    .fixed_qrcode{
+        width: 290px;
+        height: 342px;
+        position: fixed;
+        right: 10px;
+    bottom: 0;
+    }
+    .fixed_qrcode p{
+        text-align: center;
+    }
+    .qr_text1{
+        color: #FE7F14;
+        font-family: "Kiwi Maru";
+        font-size: 26.302px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    }
+    .qr_are{
+        width: 290px;
+        height: 293px;
+        border-radius: 65.115px;
+background: linear-gradient(180deg, #E2621D 0%, #FD7E14 76%);
+    }
+    .qr_are img{
+        width: 138.969px;
+        height: 138.969px;
+        margin: auto;
+    display: block;
+    padding-top: 10px;
+    }
+    .qr_text2{
+        color: #FFF;
+        text-align: center;
+        font-family: "Noto Sans";
+        font-size: 28.582px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.143px;
+        padding-top: 22px;
+    }
+    .qr_text3{
+        color: #FFF;
+        text-align: center;
+        font-family: "Noto Sans";
+        font-size: 37px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.74px;
+        padding-top: 10px;
+    }
 
 
 }
