@@ -595,7 +595,6 @@ align-items: center;
 
 .moreover{
     height: 604px;
-	width: 100%;
     background-color: #E4EFFF;
     margin-bottom: -60px;
 }
@@ -658,7 +657,8 @@ padding-left: 21px;
     background: linear-gradient(72deg, #52C7E0 7.94%, #012B67 85.68%);
     display: flex;
     margin: 30px 0;
-    float: inline-end;
+    right: 0;
+    position: absolute;
 }
 .saving_diagnosis_results_left{
     width: 176px;
@@ -1328,8 +1328,8 @@ line-height: normal;
         
     }
     .fv_content_back_texts p{
-            margin-bottom: 7vw;
-    font-size: 10vw;
+        margin-bottom: 7vw;
+        font-size: 10vw;
     }
     img.fv_image{
         margin-top: 15px;
