@@ -375,9 +375,10 @@ margin: 21px auto;
     display: flex;
 }
 .solution_flow_video{
-    width: 169.871px;
-    height: 353.986px;
-
+    width: 176px;
+    height: 350px;
+    border-radius: 30px;
+    object-fit: cover;
 }
 
 .sf_step1, .sf_step2, .sf_step3{
@@ -493,6 +494,7 @@ margin-bottom: 33px;
     border-radius: 4.091px;
 background: #FFF;
 margin: 17px auto;
+background-color: #f1f6f6;
 }
 .strength_03{
     height: 410.414px;
@@ -676,7 +678,7 @@ padding-left: 21px;
 
 
 .cases{
-    min-height: 445px;
+    height: 500px;
     border-top-right-radius: 60px;
     background: linear-gradient(149deg, #3BBCD9 -1.1%, #2E9DC0 15.99%, #012B67 100.77%);
 }
@@ -761,7 +763,7 @@ section.cases ul.slider li .ill {
 }
 
 section.cases ul.slider .slick-list {
-    padding: 28px 0 14px;
+    padding: 0;
 }
 
 section.cases .slick-dots {
@@ -902,7 +904,9 @@ section.cases ul.slider li .d2 p.price .yen {
     display: inline-block;
     margin: 0 0 0 4px;
 }
-
+img.slide_img {
+    width: 100%;
+}
 
 
 section.cases ul.slider li .d1 p.price {
@@ -1060,7 +1064,7 @@ a.CTA_btn::after{
 	vertical-align: middle;
 }
 a.CTA_btn::before{
-    right: -220px;
+    right: -250px;
     width: 8px;
     height: 8px;
     border-top: 3.16px solid #fff;
@@ -1659,8 +1663,9 @@ height: 384.863px;
         width: 560px;
     }
     .ex_video{
-        width: 269.632px;
-        height: 561.875px;
+        width: 279px;
+        height: 561px;
+        border-radius: 42px;
         display: block;
         margin: auto;
     }
