@@ -1076,7 +1076,7 @@ a.CTA_btn::after{
 	vertical-align: middle;
 }
 a.CTA_btn::before{
-    right: -250px;
+    left: 270px;
     width: 8px;
     height: 8px;
     border-top: 3.16px solid #fff;
