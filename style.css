@@ -1311,11 +1311,17 @@ line-height: normal;
 
 
 
+.sp{
+    display: block;
+}
 .pc{
     display: none;
 }
 /* 以下、PC用 */
 @media screen and (min-width: 768px) {
+.sp{
+    display: none;
+}
 .pc{
     display: block;
 }
