@@ -685,7 +685,7 @@ padding-left: 21px;
 
 
 .cases{
-    height: 500px;
+    height: 445px;
     border-top-right-radius: 60px;
     background: linear-gradient(149deg, #3BBCD9 -1.1%, #2E9DC0 15.99%, #012B67 100.77%);
 }
@@ -726,226 +726,66 @@ padding-left: 21px;
 }
 
 
-
-/*　スライダー　*/
-.slick-arrow.prev-arrow {
-    background-image: url(https://www.financial-agency.com/service/wp-content/uploads/2023/05/slide-prev.png);
-    right: auto;
-    left: 5px;
-}
-section.cases ul.slider li {
-    position: relative;
-    background: #fff url(https://www.financial-agency.com/service/wp-content/uploads/2023/05/cases_slider_bg.png) repeat;
-    background-size: 98px auto;
-    border-radius: 15px;
-    padding: 40px 20px;
-    box-shadow: 2px 2px 9px #A3CBDB;
-    margin: 0 25px;
+.slider {
 }
 
-section.cases ul.slider .slick-dots li {
-    background: #B2C9E3;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    margin: 0 8px;
-    box-shadow: none;
+.slick-slide {
+  margin: 0px 20px;
 }
 
-.slick-dots li button::before {
-    display: none;
+.slick-slide img {
+    width: 49.5%;
 }
 
-section.cases ul.slider .slick-dots li.slick-active {
-    background: #1D65B3;
+.slick-prev:before,
+.slick-next:before {
+  color: #FFF;
 }
 
-section.cases ul.slider li .ill {
-    position: absolute;
-    max-width: 104px;
-    width: 31.84%;
-    top: -27px;
-    left: 14px;
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
 }
 
-section.cases ul.slider .slick-list {
-    padding: 0;
+.slick-active {
+  opacity: 1;
 }
 
-section.cases .slick-dots {
-    bottom: -20px;
+.slick-current {
+  opacity: 1;
 }
 
-section.cases .slick-arrow {
-    width: 34px;
-    height: 34px;
-    background: rgba(29, 101, 179, .3) url(https://www.financial-agency.com/service/wp-content/uploads/2023/05/slide-next.png) no-repeat;
-    background-size: 9px auto;
-    background-position: left 12px center;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5px;
-    z-index: 1;
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #FE7F14;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 14px;
+    line-height: 31px;
+}
+.slick-dots li button:before {
+    color: #FFF;
+    opacity: 1;
 }
 
-section.cases .slick-arrow.prev-arrow {
-    background-image: url(https://www.financial-agency.com/service/wp-content/uploads/2023/05/slide-prev.png);
-    right: auto;
-    left: 5px;
-
-}
-
-section.cases ul.slider li .d1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    border-bottom: 2px solid #002769;
-    padding: 0 0 8px 5px;
-    margin: 0 auto 21px;
-}
-
-section.cases ul.slider li .d1 p.age {
-    width: 5em;
-    border: 3px solid #002769;
-    background: #fff;
-    color: #002769;
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: bold;
-    height: 34px;
-    line-height: 27px;
-    margin: 0 18px 0 0;
-    border-radius: 28px;
-    position: relative;
-    z-index: 1;
-}
-
-section.cases ul.slider li .d1 p.price {
-    color: #E11314;
-    font-size: 4.0rem;
-    font-style: italic;
-    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
-    line-height: 1;
-}
-
-section.cases ul.slider li .d1 p.price .big {
-    font-size: 1.5em;
-}
-
-section.cases ul.slider li .d1 p.price .yen {
-    font-style: normal;
-    font-size: 0.475em;
-    font-weight: bold;
-    display: inline-block;
-    margin: 0 8px 0 5px;
-}
-
-section.cases ul.slider li .d1 p.sv {
-    font-size: 2.6rem;
-    font-weight: bold;
-    line-height: 1;
-}
-
-section.cases ul.slider li .d2 {
-    display: flex;
-}
-
-section.cases ul.slider li .d2>div {
-    width: 50%;
-}
-
-section.cases ul.slider li .d2>div:first-child {
-    padding: 0 2px 0 7px;
-    position: relative;
-}
-
-section.cases ul.slider li .d2>div:first-child::after {
-    content: "";
+.slick-prev, .slick-next{
     width: 0;
     height: 0;
-    border-style: solid;
-    border-width: 9px 0 9px 10px;
-    border-color: transparent transparent transparent #002769;
-    position: absolute;
-    right: -5px;
-    top: 57%;
-    transform: translateY(-50%);
 }
 
-section.cases ul.slider li .d2>div:last-child {
-    padding: 0 7px;
-    text-align: center;
-    color: #E11314;
+.slick-prev:before, .slick-next:before {
+    font-size: 28px;
+    opacity: 1;
 }
-
-section.cases ul.slider li .d2 p.dp1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.1;
-    margin: 0 auto 10px;
+.slick-prev {
+    left: -28px;
+    z-index: 3;
 }
-
-section.cases ul.slider li .d2 p.dp1 sup {
-    font-size: .65em;
-    vertical-align: top;
+.slick-next {
+    right: 0px;
 }
-
-section.cases ul.slider li .d2 p.price {
-    font-size: 3.5rem;
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
-    line-height: 1;
-}
-
-section.cases ul.slider li .d2 p.price .big {
-    font-size: 1.5em;
-}
-
-section.cases ul.slider li .d2 p.price .yen {
-    font-style: normal;
-    font-size: 0.48em;
-    display: inline-block;
-    margin: 0 0 0 4px;
-}
-img.slide_img {
-    width: 100%;
-}
-.slick-initialized .slick-slide {
-    height: 233px;
-}
-.slick-slider .slick-track, .slick-slider .slick-list{
-    height: 327px;
-}
-
-section.cases ul.slider li .d1 p.price {
-    font-size: 9.2vw;
-}
-
-section.cases ul.slider li .d1 p.sv {
-    font-size: 6.2vw;
-}
-
-section.cases ul.slider li .d2 p.dp1 {
-    font-size: 3.8vw;
-}
-
-section.cases ul.slider li .d2 p.price {
-    font-size: 8vw;
-}
-
-section.cases ul.slider li .d1 p.age {
-    font-size: 4.5vw;
-}
-
-.resultsWrap p.p2 {
-    font-size: 4.2vw;
-}
-
-
 
 
 
@@ -976,13 +816,13 @@ margin-bottom: 33px;
 }
 p.experience_describe{
     width: 80%;
-height: 38px;
+height: 43px;
     color: #002769;
 font-family: Roboto;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
-line-height: 19px;
+line-height: 22px;
 margin: auto;
 text-align:center;
 }
@@ -1643,29 +1483,70 @@ height: 238px;
         width: 569.597px;
         height: 420.863px;
     }
-    .carousel{
-        width: 569.597px;
-        height: 420.863px;
+
+    .slider {
     }
-    .contains{
-        width: 569.597px;
-        height: 420.863px;
+    
+    .slick-slide {
+      margin: 0px 20px;
     }
-    .cases_content {
-        width: 569.597px;
-        height: 420.863px;
+    
+    .slick-slide img {
+        width: 84.5%;
     }
-    .cases_content img{
-        width: 569.597px;
-height: 384.863px;
-    }    
-    .slide{
-        width: 569.597px;
-        height: 384.863px;
+    
+    .slick-prev:before,
+    .slick-next:before {
+      color: #FFF;
     }
-    .move_controler{
-    margin-bottom: 0px;
+    
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
     }
+    
+    .slick-active {
+      opacity: 1;
+    }
+    
+    .slick-current {
+      opacity: 1;
+    }
+    
+    .slick-dots li{
+        margin: -7px 10px;
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #FE7F14;
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .slick-dots li button:before {
+        color: #FFF;
+        opacity: 1;
+    }
+    
+    .slick-prev, .slick-next{
+        width: 0;
+        height: 0;
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-size: 47px;
+        opacity: 1;
+    }
+    .slick-prev {
+        left: -56px;
+        z-index: 3;
+    }
+    .slick-next {
+        right: -6px;
+    }
+
 
     .experience{
         height: 1505px;
@@ -1791,191 +1672,13 @@ height: 384.863px;
     text-align: center;
     }
 
-    section.cases ul.slider li {
-        position: relative;
-        background: #fff url(https://www.financial-agency.com/service/wp-content/uploads/2023/05/cases_slider_bg.png) repeat;
-        background-size: 98px auto;
-        border-radius: 15px;
-        padding: 40px 20px;
-        box-shadow: 2px 2px 9px #A3CBDB;
-        margin: 0 25px;
-    }
-    
-    section.cases ul.slider .slick-dots li {
-        background: #B2C9E3;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        padding: 0;
-        margin: 0 8px;
-        box-shadow: none;
-    }
-    
-    .slick-dots li button::before {
-        display: none;
-    }
-    
-    section.cases ul.slider .slick-dots li.slick-active {
-        background: #1D65B3;
-    }
-    
-    section.cases ul.slider li .ill {
-        position: absolute;
-        max-width: 104px;
-        width: 31.84%;
-        top: -27px;
-        left: 14px;
-    }
-    
-    section.cases ul.slider .slick-list {
-        padding: 28px 0 14px;
-    }
-    
-    section.cases .slick-dots {
-        bottom: -20px;
-    }
-    
-    section.cases .slick-arrow {
-        width: 34px;
-        height: 34px;
-        background: rgba(29, 101, 179, .3) url(https://www.financial-agency.com/service/wp-content/uploads/2023/05/slide-next.png) no-repeat;
-        background-size: 9px auto;
-        background-position: left 12px center;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 5px;
-        z-index: 1;
-    }
-    
-    section.cases .slick-arrow.prev-arrow {
-        background-image: url(https://www.financial-agency.com/service/wp-content/uploads/2023/05/slide-prev.png);
-        right: auto;
-        left: 5px;
-    
-    }
-    
-    section.cases ul.slider li .d1 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        border-bottom: 2px solid #002769;
-        padding: 0 0 8px 5px;
-        margin: 0 auto 21px;
-    }
-    
-    section.cases ul.slider li .d1 p.age {
-        width: 5em;
-        border: 3px solid #002769;
-        background: #fff;
-        color: #002769;
-        text-align: center;
-        font-size: 1.7rem;
-        font-weight: bold;
-        height: 34px;
-        line-height: 27px;
-        margin: 0 18px 0 0;
-        border-radius: 28px;
-        position: relative;
-        z-index: 1;
-    }
-    
-    section.cases ul.slider li .d1 p.price {
-        color: #E11314;
-        font-size: 4.0rem;
-        font-style: italic;
-        font-family: 'Roboto', 'Noto Sans JP', sans-serif;
-        line-height: 1;
-    }
-    
-    section.cases ul.slider li .d1 p.price .big {
-        font-size: 1.5em;
-    }
-    
-    section.cases ul.slider li .d1 p.price .yen {
-        font-style: normal;
-        font-size: 0.475em;
-        font-weight: bold;
-        display: inline-block;
-        margin: 0 8px 0 5px;
-    }
-    
-    section.cases ul.slider li .d1 p.sv {
-        font-size: 2.6rem;
-        font-weight: bold;
-        line-height: 1;
-    }
-    
-    section.cases ul.slider li .d2 {
-        display: flex;
-    }
-    
-    section.cases ul.slider li .d2>div {
-        width: 50%;
-    }
-    
-    section.cases ul.slider li .d2>div:first-child {
-        padding: 0 2px 0 7px;
-        position: relative;
-    }
-    
-    section.cases ul.slider li .d2>div:first-child::after {
-        content: "";
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 9px 0 9px 10px;
-        border-color: transparent transparent transparent #002769;
-        position: absolute;
-        right: -5px;
-        top: 57%;
-        transform: translateY(-50%);
-    }
-    
-    section.cases ul.slider li .d2>div:last-child {
-        padding: 0 7px;
-        text-align: center;
-        color: #E11314;
-    }
-    
-    section.cases ul.slider li .d2 p.dp1 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.1;
-        margin: 0 auto 10px;
-    }
-    
-    section.cases ul.slider li .d2 p.dp1 sup {
-        font-size: .65em;
-        vertical-align: top;
-    }
-    
-    section.cases ul.slider li .d2 p.price {
-        font-size: 3.5rem;
-        font-weight: bold;
-        font-style: italic;
-        font-family: 'Roboto', 'Noto Sans JP', sans-serif;
-        line-height: 1;
-    }
-    
-    section.cases ul.slider li .d2 p.price .big {
-        font-size: 1.5em;
-    }
-    
-    section.cases ul.slider li .d2 p.price .yen {
-        font-style: normal;
-        font-size: 0.48em;
-        display: inline-block;
-        margin: 0 0 0 4px;
-    }
-
     .fixed_qrcode{
         width: 290px;
         height: 342px;
         position: fixed;
         right: 10px;
     bottom: 0;
+    z-index: 3;
     }
     .fixed_qrcode p{
         text-align: center;
