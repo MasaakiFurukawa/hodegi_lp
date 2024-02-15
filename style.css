@@ -716,14 +716,6 @@ padding-left: 21px;
     height: 252px;
     margin: auto;
 }
-.cases_content{
-    width: 333px;
-    height: 225px;
-}
-.cases_content img{
-    width: 333px;
-    height: 225px;
-}
 
 
 .slider {
@@ -734,7 +726,7 @@ padding-left: 21px;
 }
 
 .slick-slide img {
-    width: 49.5%;
+    width: 333.625px;
 }
 
 .slick-prev:before,
@@ -1492,7 +1484,7 @@ height: 238px;
     }
     
     .slick-slide img {
-        width: 84.5%;
+        width: 569.5px;
     }
     
     .slick-prev:before,
